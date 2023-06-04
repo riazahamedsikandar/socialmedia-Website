@@ -10,6 +10,7 @@ import {
   Link,
   Text,
 } from "@chakra-ui/react";
+
 import { DASHBOARD, LOGIN } from "lib/routes";
 import { Link as RouterLink } from "react-router-dom";
 import { useRegister } from "hooks/auth";
@@ -18,7 +19,7 @@ import {
   emailValidate,
   passwordValidate,
   usernameValidate,
-} from "utils/form-validate";
+} from "../../utils/form-validate";
 
 export default function Register() {
   const { register: signup, isLoading } = useRegister();
