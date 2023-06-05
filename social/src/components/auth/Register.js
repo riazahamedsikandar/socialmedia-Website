@@ -11,9 +11,9 @@ import {
   Text,
 } from "@chakra-ui/react";
 
-import { DASHBOARD, LOGIN } from "lib/routes";
+import { DASHBOARD, LOGIN } from "./components/auth/Register.js";
 import { Link as RouterLink } from "react-router-dom";
-import { useRegister } from "hooks/auth";
+import { useRegister } from "./hooks/auth.js";
 import { useForm } from "react-hook-form";
 import {
   emailValidate,
